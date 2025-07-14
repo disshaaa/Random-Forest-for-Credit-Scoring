@@ -1,4 +1,4 @@
-# 💳 Creditworthiness Prediction using Random Forest
+# 💳 Random Forest for Credit Scoring
 
 This project predicts the **credit risk** (good or bad) of individuals using financial and demographic data. It uses the **German Credit Dataset** and implements a complete machine learning pipeline using **Scikit-learn** and **Colab**.
 
