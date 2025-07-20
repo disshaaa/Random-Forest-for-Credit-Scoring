@@ -59,10 +59,20 @@ This project predicts the **credit risk** (good or bad) of individuals using fin
 ### 📊 9. Feature Importance
 - Plotted top 10 important features using `feature_importances_`.
 
+## 💾 Model Saving & Loading
+
+```python
+import joblib
+# Save
+joblib.dump(best_rf, "tuned_random_forest_model.joblib")
+
+# Load
+model = joblib.load("tuned_random_forest_model.joblib")
+```
 ---
 ---
 
-## 💽 Streamlit Web App
+# 💽 Streamlit Web App
 
 A user-friendly Streamlit app is included in app.py. It allows users to input all 20 features using dropdowns (for categorical) and sliders/inputs (for numerical), and instantly receive predictions.
 
@@ -74,19 +84,11 @@ A user-friendly Streamlit app is included in app.py. It allows users to input al
 - mappings.json: Human-readable mapping for dropdowns
 - columns.json: Feature type classifications
 
----
-
-## 💾 Model Saving & Loading
-
-```python
-import joblib
-# Save
-joblib.dump(best_rf, "tuned_random_forest_model.joblib")
-
-# Load
-model = joblib.load("tuned_random_forest_model.joblib")
+### 🚀 How to Run Streamlit App
 ```
-
+streamlit run app.py
+```
+Use the dropdowns to fill all features → click Predict to see whether the applicant is creditworthy or not.
 ---
 
 ## 📈 Final Results Summary
@@ -109,13 +111,5 @@ model = joblib.load("tuned_random_forest_model.joblib")
 - pandas
 - ydata-profiling
 - Streamlit (for app deployment)
-
----
-
-### 🚀 How to Run Streamlit App
-```
-streamlit run app.py
-```
-Use the dropdowns to fill all features → click Predict to see whether the applicant is creditworthy or not.
 
 ---
