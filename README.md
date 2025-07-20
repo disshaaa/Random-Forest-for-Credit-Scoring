@@ -60,22 +60,19 @@ This project predicts the **credit risk** (good or bad) of individuals using fin
 - Plotted top 10 important features using `feature_importances_`.
 
 ---
+---
 
-## 🧪 Example Usage
+## 💽 Streamlit Web App
 
-```python
-# Given a new applicant with all 20 fields:
-# 1. Encode categorical features using saved LabelEncoders
-# 2. Scale numeric fields using StandardScaler
-# 3. Predict:
-prediction = best_rf.predict(new_app_df)[0]
-proba = best_rf.predict_proba(new_app_df)[0][1]
-```
+A user-friendly Streamlit app is included in app.py. It allows users to input all 20 features using dropdowns (for categorical) and sliders/inputs (for numerical), and instantly receive predictions.
 
-Output:
-```
-✅ Approved (Good Credit) - Probability: 0.85
-```
+### 📂 Files Used
+- app.py: Streamlit app interface
+- tuned_random_forest_model.joblib: Final trained model
+- label_encoders.pkl: LabelEncoders for each categorical feature
+- scaler.pkl: Scaler used for numeric standardization
+- mappings.json: Human-readable mapping for dropdowns
+- columns.json: Feature type classifications
 
 ---
 
@@ -111,5 +108,14 @@ model = joblib.load("tuned_random_forest_model.joblib")
 - matplotlib & seaborn
 - pandas
 - ydata-profiling
+- Streamlit (for app deployment)
+
+---
+
+### 🚀 How to Run Streamlit App
+```
+streamlit run app.py
+```
+Use the dropdowns to fill all features → click Predict to see whether the applicant is creditworthy or not.
 
 ---
