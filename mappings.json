@@ -1,0 +1,84 @@
+{
+    "status_map": {
+        "A11": "< 0 DM",
+        "A12": "0 <= ... < 200 DM",
+        "A13": ">= 200 DM",
+        "A14": "no checking account"
+    },
+    "credit_history_map": {
+        "A30": "no credits/all paid",
+        "A31": "all paid",
+        "A32": "existing paid",
+        "A33": "delay",
+        "A34": "critical/other"
+    },
+    "purpose_map": {
+        "A40": "car (new)",
+        "A41": "car (used)",
+        "A42": "furniture",
+        "A43": "radio/TV",
+        "A44": "appliance",
+        "A45": "repairs",
+        "A46": "education",
+        "A47": "vacation",
+        "A48": "retraining",
+        "A49": "business",
+        "A410": "other"
+    },
+    "savings_map": {
+        "A61": "< 100 DM",
+        "A62": "100 <= ... < 500 DM",
+        "A63": "500 <= ... < 1000 DM",
+        "A64": ">= 1000 DM",
+        "A65": "unknown"
+    },
+    "employment_map": {
+        "A71": "unemployed",
+        "A72": "< 1 yr",
+        "A73": "1 <= ... < 4 yrs",
+        "A74": "4 <= ... < 7 yrs",
+        "A75": ">= 7 yrs"
+    },
+    "personal_status_map": {
+        "A91": "male div/sep",
+        "A92": "female div/sep/mar",
+        "A93": "male single",
+        "A94": "male mar/wid",
+        "A95": "female single"
+    },
+    "other_debtors_map": {
+        "A101": "none",
+        "A102": "co-applicant",
+        "A103": "guarantor"
+    },
+    "property_map": {
+        "A121": "real estate",
+        "A122": "insurance",
+        "A123": "car/other",
+        "A124": "unknown"
+    },
+    "other_installment_map": {
+        "A141": "bank",
+        "A142": "stores",
+        "A143": "none"
+    },
+    "housing_map": {
+        "A151": "rent",
+        "A152": "own",
+        "A153": "free"
+    },
+    "job_map": {
+        "A171": "unskilled non-res",
+        "A172": "unskilled res",
+        "A173": "skilled",
+        "A174": "high qual/self"
+    },
+    "telephone_map": {
+        "A191": "none",
+        "A192": "yes"
+    },
+    "foreign_worker_map": {
+        "A201": "yes",
+        "A202": "no"
+    }
+}
