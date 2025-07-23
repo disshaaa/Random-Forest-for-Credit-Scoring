@@ -76,6 +76,8 @@ model = joblib.load("tuned_random_forest_model.joblib")
 
 A user-friendly Streamlit app is included in app.py. It allows users to input all 20 features using dropdowns (for categorical) and sliders/inputs (for numerical), and instantly receive predictions.
 
+Link for streamlit app: [Streamlit working video](https://jklujaipur-my.sharepoint.com/:v:/g/personal/dishaarora_jklu_edu_in/EV3mHrwwSJxFpVo2KAxctJsBdBqfkxDXi3VC1ZaHybrG2w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VR4jBU)
+
 ### 📂 Files Used
 - app.py: Streamlit app interface
 - tuned_random_forest_model.joblib: Final trained model
